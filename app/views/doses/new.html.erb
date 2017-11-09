@@ -1,0 +1,11 @@
+<h1>Doses#new</h1>
+<p>Find me in app/views/doses/new.html.erb</p>
+
+
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+<%= f.input :description %>
+<%= f.label :ingredient %>
+<%= f.submit "add a dose", class: "btn btn-primary" %>
+<%= f.select :ingredient, %w(lemon ice mint-leaves ) %>
+<% end %>
+
